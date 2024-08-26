@@ -18,8 +18,8 @@
 
 :root {
   --main-color: #323BDF;
-  --title-size: 2.5rem;
-  --para-size: 1.2rem;
+  --title-size: 2.2rem;
+  --para-size: 1.5rem;
 }
 
 body {
@@ -128,7 +128,7 @@ header {
   color: var(--main-color);
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .hero .text button.hover,
@@ -316,12 +316,13 @@ header {
 }
 
 .services .container .card .text h2 {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .services .container .card .text p {
   color: rgba(0, 0, 0, 0.658);
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .recent-work .links {
@@ -389,7 +390,7 @@ header {
   margin: 100px 0;
 }
 
-.form .content {
+.form .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -399,8 +400,7 @@ header {
 .form .details {
   width: 48%;
   background-color: var(--main-color);
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 25px;
   padding: 40px 20px;
 }
 
