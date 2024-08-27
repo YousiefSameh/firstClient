@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+:root {
+  --main-color: #323BDF;
+  --title-size: 2.2rem;
+  --para-size: 1.2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar h1 {
+  font-size: 34px;
+  color: white;
+}
+
+.nav-bar .links a {
+  position: relative;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.nav-bar .links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  transition: 0.3s all ease;
+  bottom: 0;
+}
+
+.nav-bar .links a:hover::before {
+  width: 100%;
+}
+
+main {
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form h3 {
+  font-size: 1.5rem;
+}
+
+form select {
+  padding: 10px;
+  border-color: var(--main-color);
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.special-heading {
+  font-size: 18px;
+  color: var(--main-color);
+  letter-spacing: 2px;
+}
+
+.special-content {
+  width: fit-content;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.special-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.special-content h1 {
+  font-size: var(--title-size);
+}
+
+.cards .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 48%;
+  margin: 10px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.6);
+  padding: 20px;
+}
+
+.card h2 {
+  color: var(--main-color);
+  font-size: 1.7rem;
+}
+
+.card p {
+  color: rgb(0 0 0 / 0.6);
+  line-height: 2;
+}
+
+.card a {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+}
+
+.details .account {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.details .account img {
+  width: 35px;
+}
+
+.details i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.details i:hover {
+  color: red;
+}
+
+@media (max-width: 567px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  .special-content h1 {
+    font-size: 1.5rem;
+  }
+  form {
+    padding: 10px;
+  }
+  form h3 {
+    font-size: 0.9rem;
+  }
+  form select {
+    padding: 5px;
+  }
+  .card {
+    width: 100%;
+  }
+}
