@@ -246,6 +246,14 @@ header {
   .nav-bar {
     flex-direction: column;
   }
+  .hero .text button.hover,
+  .hero .text button:hover {
+    background-color: white;
+  }
+  .hero .text button.hover a,
+  .hero .text button:hover a {
+    color: var(--main-color);
+  }
 }
 
 @media (max-width: 450px) {
