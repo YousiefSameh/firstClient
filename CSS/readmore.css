@@ -53,6 +53,12 @@ main .container .content p {
   text-align: justify;
 }
 
+main .comments {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
 main .comments .comment {
   width: 600px;
   border: 2px solid #ddd;
@@ -100,6 +106,20 @@ main .comments .comment .tools div {
 
 main .comments .comment .tools div i {
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+main .comments .comment .tools .love i:hover {
+  color: red;
+}
+
+main .comments .comment .tools .favorite i:hover {
+  color: yellow;
+}
+
+main .comments .comment .tools .replay i:hover {
+  color: var(--main-color);
 }
 
 main form {
@@ -172,8 +192,9 @@ main form button:hover {
     flex-direction: column;
   }
   main .container .comments .comment {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   main form {
     margin: 0 auto;
