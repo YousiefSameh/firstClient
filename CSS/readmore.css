@@ -62,15 +62,18 @@ main .container .comments {
 
 main .container .comments .comment {
   padding: 20px;
-  background-color: #eee;
+  background-color: var(--main-color);
   width: 50%;
   border-radius: 10px;
+  color: white;
+  position: relative;
 }
 
 main .comments .comment .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 main .comments .comment .details div {
@@ -79,8 +82,12 @@ main .comments .comment .details div {
   gap: 10px;
 }
 
-main .comments .comment .details div img {
-  width: 35px;
+main .comments .comment img {
+  width: 60px;
+  position: absolute;
+  top: -30px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.8);
 }
 
 main .comments .comment .details div h3 {
@@ -97,8 +104,101 @@ main .comments .comment .details i:hover {
   color: red;
 }
 
-main .comments .comment p:last-child {
-  color: rgb(0 0 0 / 0.8);
+main .comments .comment q {
+  color: rgb(255 255 255 / 0.8);
   line-height: 2;
   margin-top: 10px;
+}
+
+main form {
+  width: 100%;
+}
+
+main form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main form div input {
+  font-family: "Poppins", sans-serif;
+  width: 49%;
+  padding: 10px 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+main form ::placeholder {
+  color: var(--main-color);
+}
+
+main form textarea {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 250px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+main form button {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid var(--main-color);
+  outline: none;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+main form button:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+@media (max-width: 650px) {
+  main .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  main .container .comments {
+    flex-direction: column;
+  }
+  main .container .comments .comment {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main form {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main form div {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  main form textarea,
+  main form div input,
+  main form button {
+    width: 95%;
+  }
 }
