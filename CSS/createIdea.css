@@ -18,7 +18,7 @@ form {
   margin-top: 30px;
 }
 
-form div {
+form div:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,13 +41,21 @@ form ::placeholder {
   color: var(--main-color);
 }
 
-form div input {
+form div:first-child input {
   width: 49%;
 }
 
 form textarea {
   height: 170px;
 }
+
+form .checkin {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 
 form button {
   padding: 15px 25px;
