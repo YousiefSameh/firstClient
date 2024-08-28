@@ -15,16 +15,16 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-form div:first-child {
+form .first {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-form input,
+form input:not([type="file"]),
 form textarea {
   padding: 15px 25px;
   outline: none;
@@ -41,7 +41,7 @@ form ::placeholder {
   color: var(--main-color);
 }
 
-form div:first-child input {
+form .first input {
   width: 49%;
 }
 
@@ -51,11 +51,28 @@ form textarea {
 
 form .checkin {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   font-size: 14px;
   font-weight: bold;
 }
 
+form .checkin p {
+  margin: 5px 10px;
+}
+
+form .checkin div {
+  display: flex;
+  align-items: center;
+}
+
+form .checkin div input:first-child {
+  width: fit-content;
+}
+
+form input[type="file"] {
+  margin: 5px 10px;
+  width: fit-content;
+}
 
 form button {
   padding: 15px 25px;
@@ -74,4 +91,10 @@ form button {
 form button:hover {
   background-color: transparent;
   color: var(--main-color);
+}
+
+@media (max-width: 476px) {
+  form .checkin {
+    flex-direction: column;
+  }
 }

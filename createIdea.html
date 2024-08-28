@@ -32,19 +32,25 @@
       </div>
       <div class="container">
         <form action="">
-          <div>
+          <div class="first">
             <input type="text" placeholder="Enter Your Name...">
             <input type="text" placeholder="Enter Your Email...">
           </div>
           <input type="text" placeholder="Enter The Subject...">
           <textarea placeholder="Enter The Idea"></textarea>
           <div class="checkin">
-            <input type="checkbox" id="check">
-            <label for="check">Are You Sure For The Data You Entried</label>
+            <div>
+              <input type="radio" id="yes" name="check">
+              <label for="">Yes</label>
+              <input type="radio" id="no" name="check">
+              <label for="">No</label>
+            </div>
+            <p>Are You Sure For The Data You Entried</p>
           </div>
           <button type="submit">Submit</button>
         </form>
       </div>
     </main>
+    <script src="JS/app.js"></script>
   </body>
 </html>
