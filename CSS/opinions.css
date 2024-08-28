@@ -215,8 +215,9 @@ form select {
   padding: 10px 15px;
   font-size: 1.3rem;
   margin: 10px;
+  color: white;
+  background-color: white ;
   border: 2px solid var(--main-color);
-  background-color: white;
   color: #000;
   border-radius: 5px;
   font-weight: bold;
@@ -225,17 +226,15 @@ form select {
 }
 
 .paginations button.active,
-.paginations button.prev,
-.paginations button.next,
 .paginations button:hover {
-  color: white;
   background-color: var(--main-color);
+  color: white;
 }
 
 .paginations button.prev:hover,
 .paginations button.next:hover {
-  background-color: white;
-  color: #000;
+  background-color: var(--main-color);
+  color: white;
 }
 
 @media (max-width: 567px) {
