@@ -177,14 +177,65 @@ form select {
   width: 35px;
 }
 
-.details i {
+
+.counts {
+  display: flex;
+  gap: 30px;
+}
+
+.counts div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counts i {
   font-size: 1.5rem;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
 
-.details i:hover {
+.counts .heart-icon:hover {
   color: red;
+}
+
+.counts .comment-icon:hover {
+  color: var(--main-color);
+}
+
+.paginations {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.paginations button {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  margin: 10px;
+  border: 2px solid var(--main-color);
+  background-color: white;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.paginations button.active,
+.paginations button.prev,
+.paginations button.next,
+.paginations button:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.paginations button.prev:hover,
+.paginations button.next:hover {
+  background-color: white;
+  color: #000;
 }
 
 @media (max-width: 567px) {
