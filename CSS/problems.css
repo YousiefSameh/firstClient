@@ -145,6 +145,21 @@ button:hover {
   color: var(--main-color);
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover a {
+  color: var(--main-color);
+}
+
+#Add {
+  color: var(--main-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media (max-width: 650px) {
   main .card {
     width: 95%;
