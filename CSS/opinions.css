@@ -166,39 +166,6 @@ form select {
   color: white;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-button {
-  padding: 15px 25px;
-  border-radius: 10px;
-  background-color: var(--main-color);
-  font-size: 18px;
-  font-weight: bold;
-  width: fit-content;
-  border: 4px solid var(--main-color);
-  margin: 10px;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
-}
-
-button a {
-  color: white;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: transparent;
-}
-
-button:hover a {
-  color: var(--main-color);
-}
-
 @media (max-width: 567px) {
   .nav-bar {
     flex-direction: column;
