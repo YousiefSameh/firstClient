@@ -12,6 +12,25 @@ main {
   margin-top: 40px;
 }
 
+main .links {
+  width: fit-content;
+  margin: 30px auto;
+}
+
+main .links a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+main .links a:hover,
+main .links .active {
+  color: var(--main-color);
+}
+
 form {
   display: flex;
   align-items: center;
@@ -166,7 +185,7 @@ form select {
   color: white;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 650px) {
   .nav-bar {
     flex-direction: column;
   }
