@@ -629,13 +629,6 @@ footer .copy {
   text-align: center;
 }
 
-@media (max-width: 1250px) {
-  main .container {
-    width: 85%;
-    margin: auto;
-  }
-}
-
 @media (max-width: 800px) {
   footer > h1 {
     font-size: 1.4rem;
