@@ -165,4 +165,10 @@ button:hover a {
     width: 95%;
     margin: auto;
   }
+  #Add {
+    font-size: 0.79rem;
+  }
+  button:first-child {
+    margin-left: 10px;
+  }
 }
