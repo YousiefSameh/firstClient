@@ -133,7 +133,8 @@ main .comments .comment .tools div i {
 }
 
 main form {
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 main form div {
@@ -161,7 +162,7 @@ main form ::placeholder {
 main form textarea {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  height: 250px;
+  height: 200px;
   padding: 10px 20px;
   margin: 10px 0;
   border: 2px solid var(--main-color);
