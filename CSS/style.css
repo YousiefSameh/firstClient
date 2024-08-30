@@ -629,7 +629,7 @@ footer .copy {
   text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   main .container {
     width: 85%;
     margin: auto;
