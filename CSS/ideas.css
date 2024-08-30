@@ -186,6 +186,9 @@ form select {
 }
 
 @media (max-width: 650px) {
+  .container {
+    width: 100% !important;
+  }
   .nav-bar {
     flex-direction: column;
   }
